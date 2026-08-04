@@ -1,23 +1,21 @@
-PROTÓTIPO DO SITE DO SINDICATO
+PUBLICAÇÃO DO SITE INSTITUCIONAL
 
-Este pacote contém um protótipo em HTML/CSS/JS, sem WordPress e sem banco de dados.
+O site é estático (HTML, CSS e JavaScript) e é publicado pelo GitHub Pages a partir da branch `main` do repositório oficial.
 
-Como testar no computador:
-1. Extraia o ZIP.
-2. Abra o arquivo index.html no navegador.
+Endereço publicado:
+https://sindservpirapozinho.com
 
-Como testar na HostGator sem mexer no site atual:
-1. Entre no cPanel.
-2. Abra o Gerenciador de Arquivos.
-3. Entre em public_html.
-4. Crie uma pasta, por exemplo: prototipo-sindicato-v3
-5. Envie todos os arquivos e pastas deste pacote para dentro dela.
-6. Acesse:
-   https://sindservpirapozinho.com/prototipo-sindicato-v3/
+Fluxo de atualização:
+1. Crie uma branch para a alteração.
+2. Revise o site localmente abrindo `index.html` no navegador.
+3. Confira links, imagens, menu móvel, contraste e textos.
+4. Aguarde aprovação antes de enviar alterações para `main`.
+5. Após a aprovação, faça o commit e envie a branch para o GitHub.
 
-Observações:
-- A foto antiga de pessoa/presidência foi removida.
-- A foto nova da fachada do sindicato foi colocada no projeto.
-- A seção de empresas do Vale Card/SINDCARD foi preenchida para apresentação.
-- A lista de empresas deve ser confirmada com o sindicato antes da publicação final.
-- O formulário é demonstrativo e não envia e-mail ainda.
+Domínio:
+- O arquivo `CNAME` mantém o domínio institucional configurado no GitHub Pages.
+- Não remova ou altere o `CNAME` sem confirmação.
+
+Formulário de contato:
+- O site não usa serviço externo de formulários.
+- Os canais de contato institucionais são exibidos diretamente na página.

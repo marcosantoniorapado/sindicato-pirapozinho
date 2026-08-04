@@ -239,9 +239,8 @@ h3{font-size:1.28rem;margin-bottom:10px}
 .partner-card strong{
   font-size:1.08rem;
   color:#132942;
-  margin-bottom:8px;
+  line-height:1.35;
 }
-.partner-card span{color:var(--muted);font-size:.95rem}
 .partner-note{
   margin:28px auto 0;
   max-width:850px;
@@ -275,26 +274,13 @@ h3{font-size:1.28rem;margin-bottom:10px}
   padding:15px 18px;
 }
 
-.contact-form{
+.contact-info{
   background:var(--soft);
   border:1px solid var(--line);
   border-radius:24px;
   padding:26px;
-  display:grid;
-  gap:16px;
 }
-label{font-weight:800;color:#243950}
-input,textarea{
-  width:100%;
-  margin-top:6px;
-  border:1px solid #ccd9e4;
-  border-radius:14px;
-  padding:13px 14px;
-  font:inherit;
-  background:#fff;
-}
-textarea{resize:vertical}
-small{color:var(--muted)}
+.contact-info p{color:var(--muted);margin-bottom:0}
 
 .footer{
   background:#0c294d;
