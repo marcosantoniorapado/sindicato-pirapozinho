@@ -329,15 +329,19 @@ h3{font-size:1.28rem;margin-bottom:10px}
   flex-wrap:wrap;
   text-align:center;
 }
+.footer-inner span + span{
+  padding-left:16px;
+  border-left:1px solid rgba(255,255,255,.34);
+}
 
 .whatsapp-float{
   position:fixed;
   left:24px;
   bottom:24px;
   z-index:30;
-  display:flex;
-  align-items:center;
-  gap:10px;
+  display:block;
+  width:54px;
+  height:54px;
   padding:0;
   border:0;
   background:transparent;
@@ -362,6 +366,9 @@ h3{font-size:1.28rem;margin-bottom:10px}
 }
 .whatsapp-float svg{position:relative;z-index:1;width:31px;height:31px;fill:#25d366}
 .whatsapp-float-bubble{
+  position:absolute;
+  left:calc(100% + 10px);
+  bottom:0;
   display:grid;
   gap:1px;
   max-width:0;
@@ -403,9 +410,9 @@ h3{font-size:1.28rem;margin-bottom:10px}
   right:24px;
   bottom:24px;
   z-index:30;
-  display:flex;
-  align-items:center;
-  gap:10px;
+  display:block;
+  width:54px;
+  height:54px;
   color:inherit;
   text-align:right;
 }
@@ -423,6 +430,9 @@ h3{font-size:1.28rem;margin-bottom:10px}
 }
 .sindcard-float svg{width:29px;height:29px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .sindcard-float-bubble{
+  position:absolute;
+  right:calc(100% + 10px);
+  bottom:0;
   display:grid;
   gap:1px;
   max-width:0;
@@ -509,7 +519,12 @@ h3{font-size:1.28rem;margin-bottom:10px}
   .cards,.partner-grid{grid-template-columns:1fr}
   .hero-actions{display:grid}
   /* Os dois atalhos usam a mesma linha-base e o mesmo diâmetro no celular. */
-  .whatsapp-float,.sindcard-float{bottom:14px;line-height:1}
+  .whatsapp-float,.sindcard-float{
+    bottom:14px;
+    width:50px;
+    height:50px;
+    line-height:1;
+  }
   .whatsapp-float{left:14px}
   .sindcard-float{right:14px}
   .whatsapp-float-icon,.sindcard-float-icon{
@@ -525,4 +540,10 @@ h3{font-size:1.28rem;margin-bottom:10px}
   .sindcard-float-bubble{white-space:normal}
   .sindcard-float:hover .sindcard-float-bubble,
   .sindcard-float:focus-visible .sindcard-float-bubble{max-width:calc(100vw - 78px)}
+  .footer-inner{gap:8px}
+  .footer-inner span + span{
+    width:100%;
+    padding-left:0;
+    border-left:0;
+  }
 }
