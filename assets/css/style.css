@@ -240,7 +240,10 @@ h3{font-size:1.28rem;margin-bottom:10px}
 .sindcard-box p{color:rgba(255,255,255,.86);max-width:780px}
 .sindcard-box .btn{background:#fff;color:var(--blue);box-shadow:0 8px 18px rgba(5,28,58,.16);flex:0 0 auto}
 .sindcard-box .btn:hover,
-.sindcard-box .btn:focus-visible{box-shadow:0 15px 31px rgba(5,28,58,.24),0 12px 24px rgba(88,174,255,.34)}
+.sindcard-box .btn:focus-visible{
+  /* Sobre o azul, o halo branco destaca o botão sem cobrir sua superfície. */
+  box-shadow:0 16px 32px rgba(4,26,52,.30),0 13px 28px rgba(255,255,255,.48);
+}
 
 .partner-grid{
   display:grid;
