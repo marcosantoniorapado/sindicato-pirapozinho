@@ -86,8 +86,6 @@ a{color:inherit;text-decoration:none}
 .menu a:not(.btn):hover::after,
 .menu a:not(.btn)[aria-current="location"]::after{transform:scaleX(1)}
 .menu-toggle{display:none}
-.nav-actions{display:contents}
-.sindcard-mobile{display:none}
 
 .btn{
   position:relative;
@@ -246,20 +244,6 @@ h3{font-size:1.28rem;margin-bottom:10px}
   /* Sobre o azul, o halo branco destaca o botão sem cobrir sua superfície. */
   box-shadow:0 16px 32px rgba(4,26,52,.30),0 13px 28px rgba(255,255,255,.48);
 }
-.sindcard-info{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-top:18px;
-  padding:14px 18px;
-  border:1px solid rgba(31,102,166,.18);
-  border-radius:18px;
-  background:var(--soft);
-  color:var(--muted);
-}
-.sindcard-info strong{color:var(--blue)}
-.sindcard-info a{margin-left:auto;color:var(--blue-2);font-weight:800;white-space:nowrap}
-.sindcard-info a:hover,.sindcard-info a:focus-visible{text-decoration:underline}
 
 .partner-grid{
   display:grid;
@@ -413,8 +397,6 @@ h3{font-size:1.28rem;margin-bottom:10px}
 .whatsapp-float:focus-visible{outline:3px solid rgba(37,211,102,.42);outline-offset:4px;border-radius:999px}
 
 @media (max-width:900px){
-  .nav-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
-  .sindcard-mobile{display:inline-flex;padding:9px 13px;font-size:.88rem;box-shadow:0 7px 16px rgba(18,63,114,.16)}
   .menu-toggle{
     display:inline-flex;
     background:var(--blue);
@@ -455,18 +437,12 @@ h3{font-size:1.28rem;margin-bottom:10px}
   .mini-grid{grid-template-columns:1fr}
   .sindcard-box{display:block}
   .sindcard-box .btn{margin-top:18px}
-  .sindcard-info{flex-wrap:wrap}
-  .sindcard-info a{margin-left:0}
 }
 
 @media (max-width:560px){
   .container{width:min(100% - 28px,1180px)}
   .topbar-inner{font-size:.84rem}
   .nav{min-height:74px}
-  .brand img{width:142px}
-  .nav-actions{gap:7px}
-  .sindcard-mobile{padding:8px 10px;font-size:.8rem}
-  .menu-toggle{padding:9px 12px;font-size:.82rem}
   .hero-content{padding:58px 0}
   .section{padding:64px 0}
   .cards,.partner-grid{grid-template-columns:1fr}
@@ -477,5 +453,4 @@ h3{font-size:1.28rem;margin-bottom:10px}
   .whatsapp-float-bubble{white-space:normal}
   .whatsapp-float:hover .whatsapp-float-bubble,
   .whatsapp-float:focus-visible .whatsapp-float-bubble{max-width:calc(100vw - 78px)}
-  .sindcard-info{display:grid;gap:5px;padding:14px 16px}
 }
