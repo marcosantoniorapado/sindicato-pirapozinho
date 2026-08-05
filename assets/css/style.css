@@ -177,6 +177,12 @@ h3{font-size:1.28rem;margin-bottom:10px}
 }
 
 .text-block p{color:var(--muted)}
+.management{
+  color:var(--blue) !important;
+  font-weight:800;
+  letter-spacing:.04em;
+  margin:-8px 0 18px;
+}
 .mini-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
