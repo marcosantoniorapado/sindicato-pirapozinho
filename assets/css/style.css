@@ -449,6 +449,8 @@ h3{font-size:1.28rem;margin-bottom:10px}
   .hero-actions{display:grid}
   .whatsapp-float{left:14px;bottom:14px}
   .whatsapp-float-icon{width:50px;height:50px;flex-basis:50px}
+  /* No celular, o texto pode ocupar duas linhas em vez de ser cortado. */
+  .whatsapp-float-bubble{white-space:normal}
   .whatsapp-float:hover .whatsapp-float-bubble,
-  .whatsapp-float:focus-visible .whatsapp-float-bubble{max-width:min(250px,calc(100vw - 92px))}
+  .whatsapp-float:focus-visible .whatsapp-float-bubble{max-width:calc(100vw - 78px)}
 }
