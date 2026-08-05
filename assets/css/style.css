@@ -324,9 +324,10 @@ h3{font-size:1.28rem;margin-bottom:10px}
 }
 .footer-inner{
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   gap:16px;
   flex-wrap:wrap;
+  text-align:center;
 }
 
 .whatsapp-float{
